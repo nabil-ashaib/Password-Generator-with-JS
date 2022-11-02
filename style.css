@@ -1,0 +1,97 @@
+html, body {
+    color: #eeeeee;
+    background-color: #1C1C1C;
+}
+
+@media (max-width: 950px) {
+    .content {
+        width: 100%;
+        height: auto;
+        margin: 0; padding: 0;
+        background-color: #1C1C1C;
+    }
+    #generator-block {
+        color: #eeeeee;
+        width: auto; height: auto;
+        min-width: 85%;
+        padding: 5px;
+        margin: 20% auto;
+        text-align: left;
+        border-radius: 5px;
+        background-color: #1F2937;
+    }
+}
+
+.content {
+	width: 100%;
+	height: auto;
+    margin: 0; padding: 0;
+    background-color: #1C1C1C;
+}
+#generator-block {
+    color: #eeeeee;
+    width: auto;
+	max-width: 40%;
+    padding: 40px;
+    margin: 4% auto;
+	text-align: left;
+    border-radius: 5px;
+    background-color: #1F2937;
+}
+
+#title-1 {
+    color: #eeeeee;
+    margin: 0;
+}
+#title-2 {
+    color: #4ADF86;
+    margin: 0;
+}
+#description {
+    color: #eeeeee;
+    margin-bottom: 20px;
+}
+#toggels-label {
+    width: auto; height: auto;
+    margin: auto;
+}
+#tickmarks {
+    color: #eeeeee;
+    background-color: #eeeeee;
+}
+#select-length {
+    color: #55F991;
+    margin: 0 auto;
+    font-weight: 700;
+    background-color: #eeeeee;
+}
+
+#generate-btn {
+    width: auto; height: auto;
+    color: #eeeeee;
+    margin: 10px 0;
+    padding: 10px 17px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    background-color: #10B981;
+}
+
+#line {
+    width: 100%; height: 1px;
+    margin: 20px 0;
+    background-color: #2F3E53;
+}
+
+
+#password-1, #password-2 {
+    max-width: 100%;
+    color: #55F991;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 4px 14px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #273549;
+}
+

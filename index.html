@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Password Generator | Nabil ASHAIB</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="content">
+            <div id="generator-block">
+                <h1 id="title-1">Generate a</h1>
+                <h1 id="title-2">Random Password</h1>
+                <p id="description">Never use an insecure password again.</p>
+
+                <label id="toggels-label">
+                    Password Length <i class="small">(8 To 16 character)</i><br>
+                        
+                    <output id="rangevalue"> 8</output> Character<br>
+                    <input type="range" id="select-length" min="8" max="16" value="8" step="1" list="tickmarks"oninput="rangevalue.value=value"/><br>
+                        
+                    <datalist class="light" id="tickmarks">
+                        <option value="8"></option><option value="9"></option>
+                        <option value="10"></option><option value="11"></option>
+                        <option value="12"></option><option value="13"></option>
+                        <option value="14"></option><option value="15"></option>
+                        <option value="16"></option>
+                    </datalist>
+
+                    <input type="checkbox" id="select-symbols" checked> Symbols <br>
+                    <input type="checkbox" id="select-numbers" checked> Numbers <br>
+                </label><br>
+
+                <button onclick="genrate()" id="generate-btn">Generate Passwords</button>
+
+                <div id="line"></div>
+                <div class="container" id="passwords">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div id="password-1" onclick="copyPasswordOne()" title="Click To Copy!"><br></div>
+                        </div>
+                   
+                        <div class="col-sm">
+                            <div id="password-2" onclick="copyPasswordTwo()" title="Click To Copy!"><br></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
